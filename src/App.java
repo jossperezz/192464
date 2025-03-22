@@ -2,85 +2,87 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner s = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Nombre vendedor:");
-        String a = s.nextLine();
+        String nameVendedor = scanner.nextLine();
 
         System.out.println("Cantidad de productos vendidos:");
-        int p = s.nextInt();
-
+        int cantVentas = scanner.nextInt();
+            
         System.out.println("Ingrese valor producto 1:");
-        double x1 = s.nextDouble();
+        double producto1 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 2:");
-        double x2 = s.nextDouble();
+        double producto2 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 3:");
-        double x3 = s.nextDouble();
+        double producto3 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 4:");
-        double x4 = s.nextDouble();
+        double producto4 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 5:");
-        double x5 = s.nextDouble();
+        double producto5 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 6:");
-        double x6 = s.nextDouble();
+        double producto6 = scanner.nextDouble();
 
         System.out.println("Ingrese valor producto 7:");
-        double x7 = s.nextDouble();
+        double producto7 = scanner.nextDouble();
+    
 
-        double s1 = 0;
+        double comision = 0;
 
-        if (x1 >= 100000) {
-            s1 = s1 + (x1 * 0.10);
+        if (producto1 >= 100000) {
+            comision = comision + (producto1 * 0.10);
         } else {
-            s1 = s1 + (x1 * 0.05);
+            comision = comision + (producto1 * 0.05);
         }
 
-        if (x2 >= 100000) {
-            s1 = s1 + (x2 * 0.10);
+        if (producto2 >= 100000) {
+            comision = comision + (producto2 * 0.10);
         } else {
-            s1 = s1 + (x2 * 0.05);
+            comision = comision + (producto2 * 0.05);
         }
 
-        if (x3 >= 100000) {
-            s1 = s1 + (x3 * 0.10);
+        if (producto3 >= 100000) {
+            comision = comision + (producto3 * 0.10);
         } else {
-            s1 = s1 + (x3 * 0.05);
+            comision = comision + (producto3 * 0.05);
         }
 
-        if (x4 >= 100000) {
-            s1 = s1 + (x4 * 0.10);
+        if (producto4 >= 100000) {
+            comision = comision + (producto4 * 0.10);
         } else {
-            s1 = s1 + (x4 * 0.05);
+            comision = comision + (producto4 * 0.05);
         }
 
-        if (x5 >= 100000) {
-            s1 = s1 + (x5 * 0.10);
+        if (producto5 >= 100000) {
+            comision = comision + (producto5 * 0.10);
         } else {
-            s1 = s1 + (x5 * 0.05);
+            comision = comision + (producto5 * 0.05);
         }
 
-        if (x6 >= 100000) {
-            s1 = s1 + (x6 * 0.10);
+        if (producto6 >= 100000) {
+            comision = comision + (producto6 * 0.10);
         } else {
-            s1 = s1 + (x6 * 0.05);
+            comision = comision + (producto6 * 0.05);
         }
 
-        if (x7 >= 100000) {
-            s1 = s1 + (x7 * 0.10);
+        if (producto7 >= 100000) {
+            comision = comision + (producto7 * 0.10);
         } else {
-            s1 = s1 + (x7 * 0.05);
+            comision = comision + (producto7 * 0.05);
         }
 
-        double tt = x1 + x2 + x3 + x4 + x5 + x6 + x7;
-        double ss = (double) (s1 + 1000000);
+        double totalVentas = producto1 + producto2 + producto3 + producto4 + producto5 + producto6 + producto7;
+        double salarioVendedor = (double) (comision + 1000000);
 
-        System.out.println("Vendedor: " + a);
-        System.out.println("Total ventas: " + (int)tt);
-        System.out.println("Comisiones: " + (int)s1);
-        System.out.println("Salario total: " + (int)ss);
+        System.out.println("Vendedor: " + nameVendedor);
+        System.out.println("Total ventas: " + (int)totalVentas);
+        System.out.println("Comisiones: " + (int)comision);
+        System.out.println("Salario total: " + (int)salarioVendedor);
+    }
     }
 }
